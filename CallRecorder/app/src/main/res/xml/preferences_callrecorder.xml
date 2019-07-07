@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Files Storage Settings">
+
+    <CheckBoxPreference android:title="External Memory "
+        android:id="@+id/settings_ExternalMemory"
+                    android:summary="SD Card"
+                    android:key="SD"
+                    android:defaultValue="false"
+                    android:checked="false"
+        />
+
+    <CheckBoxPreference android:title="Internal Memory "
+                android:id="@+id/setting_InternalMemory"
+                android:summary="Phone Memory "
+                android:key="Phone"
+                android:defaultValue="true"
+                android:checked="true"
+        />
+</PreferenceCategory>
+    <PreferenceCategory android:title="App User Settings">
+    <Preference android:title="ChangePassword"
+                        android:key="ChangePassword"
+                    android:summary="ResetPassword"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Inbox,Trash Settings">
+    <ListPreference android:title="Show Records in Inbox and Trash By Default"
+                        android:id="@+id/defaultView"
+                        android:key="ViewList"
+                        android:defaultValue="3"
+                        android:entries="@array/viewByList"
+                        android:entryValues="@array/viewByListValues"
+                        android:summary="Select Default View"/>
+     <Preference android:title="Filter Call Records in Inbox"
+         android:key="setDate"
+         android:defaultValue="99/99/99"
+         android:summary="Show Call Records  After  99/99/9999"
+
+         >
+
+     </Preference>
+
+
+
+
+
+
+</PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

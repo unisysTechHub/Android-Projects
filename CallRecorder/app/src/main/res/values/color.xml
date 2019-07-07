@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_background_pressed">#c2c2c2</color>
+    <color name="holo_blue_dark">#17170451</color>
+    <color name="holo_blue_bright">#17170459</color>
+    <color name="holo_blue_light">#17170450</color>
+    <color name="white">#ffffff</color>
+    <color name="list_background">#f3f3f3</color>
+    <color name="list_divider">#272727</color>
+</resources>

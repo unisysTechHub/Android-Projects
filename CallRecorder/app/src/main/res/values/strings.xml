@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Call Recorder</string>
+    <string name="space">""</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="strNoRecordsFound">No Record Found</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="titles">
+        <item>Call Recorder App</item>
+        <item>Inbox</item>
+        <item>Deleted</item>
+        <item>Sort By Sender</item>
+         <item>View By Date</item>
+        <item>View By Month </item>
+        <item>Settings</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

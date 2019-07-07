@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/InboxGroupItemLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_marginLeft="40dp"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:visibility="visible"
+        android:background="@drawable/ic_identity"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="Bipin" />
+        <TextView
+            android:id="@+id/contact_number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9845994407" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/no_of_calls"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/callDurationByPhoneNumber"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0min" />
+
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/groupItem_checkBox"
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
+

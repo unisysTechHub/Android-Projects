@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header Starts -->
+
+    <LinearLayout
+        android:id="@+id/inbox_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0079C2"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/drawer_icon"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/ic_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/currentFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:maxLines="1"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/search_imageView_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dip"
+            android:src="@drawable/search" />
+
+        <LinearLayout
+            android:id="@+id/inbox_header_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+
+                >
+            </EditText>
+
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/clear" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <ExpandableListView
+        android:id="@+id/expandable_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/inbox_header">
+    </ExpandableListView>
+
+
+    <TextView
+        android:id="@+id/inboxEmpty"
+        android:text="@string/strNoRecordsFound"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        style="@android:style/TextAppearance.Large"
+        android:gravity="center">
+    </TextView>
+
+    <!-- Footer Starts -->
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="#000000"
+        android:orientation="horizontal" >
+
+
+        <ImageView
+            android:id="@+id/speaker"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/spear_icon" />
+
+        <ImageView
+            android:id="@+id/delete_imageView_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_delete_light" />
+
+        <ImageView
+            android:id="@+id/sync_imageview_inbox"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/sync" />
+        <ImageView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_empty"/>
+
+
+        <ImageView
+            android:id="@+id/settings_imageview_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:src="@drawable/settings"
+
+
+
+            />
+    </LinearLayout>
+    <android.support.v7.widget.Toolbar android:id="@+id/toolBarBottom"
+        android:title="Tool Bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:theme="@style/ToolBarTheme"
+        app:theme="@style/ToolBarTheme"
+
+        />
+
+</LinearLayout>

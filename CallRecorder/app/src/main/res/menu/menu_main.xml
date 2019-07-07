@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/drawer_icon"
+        android:title="drawer_icon"
+
+        android:icon="@drawable/ic_drawer"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_search"
+        android:title="action_search"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+     <item android:id="@+id/sort_by_date"
+        android:title="Sort By Date"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/sort_by_sender"
+        android:title="Sort By Sender"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/view_by_date"
+        android:title="View By Date"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/view_by_month"
+        android:title="View By Month"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/inbox"
+        android:title="Inbox"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/trash"
+        android:title="Trash"
+        app:showAsAction="never"
+        />
+
+
+
+
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+            android:orderInCategory="100" app:showAsAction="never" />
+</menu>

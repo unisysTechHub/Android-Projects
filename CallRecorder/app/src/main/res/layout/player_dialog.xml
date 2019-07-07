@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/player_Dialog"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:background="@color/holo_blue_dark"
+    android:visibility="gone"
+    android:gravity="center"
+    android:keepScreenOn="true"
+     android:orientation="vertical"
+     >
+
+    <!-- Player Buttons -->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:background="@color/holo_blue_dark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_blue_dark"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="0.0"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:id="@+id/playPauseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/ic_pause_button"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:id="@+id/playstopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/ic_stop_button" />
+
+        <TextView
+            android:id="@+id/audioDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="6.0"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/holo_blue_dark"
+        android:gravity="end"
+        android:orientation="horizontal" >
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

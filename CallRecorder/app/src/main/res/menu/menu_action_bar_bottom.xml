@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/speaker_icon"
+        android:title="speaker_icon"
+        android:icon="@drawable/speaker_icon"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/delete_icon"
+        android:title="delete_icon"
+        android:icon="@drawable/ic_action_delete_light"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/sync_icon"
+        android:title="sync_icon"
+        android:icon="@drawable/sync"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/move_to_inbox_icon"
+        android:title="move_inbox_icon"
+        android:icon="@drawable/ic_move_to_inbox"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/emptyInbox_icon"
+        android:title="emptyInbox"
+        android:icon="@drawable/ic_empty"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/speaker"
+        android:title="Speaker"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/sync"
+        android:title="Sync"
+        app:showAsAction="never"/>
+
+
+
+    <item android:id="@+id/delete"
+        android:title="Delete"
+        app:showAsAction="never"/>
+
+
+    <item android:id="@+id/emptyInbox"
+        android:title="Empty Inbox"
+
+        app:showAsAction="never"/>
+
+
+    <item android:id="@+id/move_to_inbox"
+        android:title="Move to Inbox"
+
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/emptyTrash"
+        android:title="Empty Trash"
+
+        app:showAsAction="never"/>
+
+
+
+</menu>
